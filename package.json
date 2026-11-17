@@ -1,0 +1,35 @@
+{
+  "name": "drip-semester-starter",
+  "version": "0.1.1",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^22.22.2 || ^24.15.0 || >=26.0.0",
+    "npm": ">=10"
+  },
+  "scripts": {
+    "dev": "node node_modules/vite/bin/vite.js",
+    "typecheck": "node node_modules/typescript/bin/tsc --noEmit",
+    "build": "node node_modules/vite/bin/vite.js build",
+    "preview": "node node_modules/vite/bin/vite.js preview",
+    "lint:js": "node node_modules/eslint/bin/eslint.js . --max-warnings=0",
+    "lint:css": "node node_modules/stylelint/bin/stylelint.mjs \"**/*.css\" --max-warnings=0",
+    "lint": "npm run lint:js && npm run lint:css",
+    "format:check": "node node_modules/prettier/bin/prettier.cjs --check \"**/*.{js,mjs,cjs,ts,css,html,json,yml,yaml}\"",
+    "test": "node node_modules/vitest/vitest.mjs run",
+    "check:starter": "npm run typecheck && npm run lint && npm run format:check && npm run build",
+    "check": "npm run typecheck && npm run lint && npm run format:check && npm test && npm run build"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "eslint": "10.5.0",
+    "globals": "17.6.0",
+    "prettier": "3.9.10",
+    "stylelint": "18.0.0",
+    "stylelint-config-standard": "41.0.0",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.61.1",
+    "vite": "8.3.1",
+    "vitest": "5.1.0"
+  }
+}

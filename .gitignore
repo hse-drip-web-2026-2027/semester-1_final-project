@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.runtime/
+coverage/
+*.log
+.env
+.env.*
+!.env.example
+.DS_Store
+
+# Кэши инструментов и результаты инкрементальной проверки
+.cache/
+.vite/
+.vitest/
+.eslintcache
+.stylelintcache
+*.tsbuildinfo

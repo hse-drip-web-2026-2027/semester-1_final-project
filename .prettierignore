@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.runtime/
+coverage/
+.cache/
+.vite/
+.vitest/
+.env
+.env.*
+package-lock.json
